@@ -57,21 +57,6 @@ a {
     background-size: cover;
 }
 
-h2 {
-    font-weight: 100;
-    font-size: 100pt;
-    letter-spacing: 2pt;
-    text-align: right;
-}
-
-h3 {
-    padding: 50px;
-    font-size: 36px;
-    line-height: 42px;
-    font-weight: 100;
-    letter-spacing: 1pt;
-}
-
 section {
     display: flex;
 }
@@ -82,33 +67,53 @@ section div {
     padding: 50px;
 }
 
+h2 {
+    font-weight: 100;
+    font-size: 100pt;
+    letter-spacing: 2pt;
+    text-align: right;
+}
+
 section div img {
     padding: 50px;
     padding-bottom: 0px;
     width: 100%;
 }
 
-#portfolio {
-    display: flex;
-    flex-wrap: wrap;
+h3 {
+    padding: 50px;
+    padding-bottom: 0px;
+    color: red;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 100;
+    letter-spacing: 1pt;
 }
 
-#portfolio h4 {
-    display: inline;
-    background-color: rgb(0, 140, 255);
-    font-weight: 500;
-    font-size: large;
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 300px;
-    padding: 25px;
+p {
+    padding: 50px;
+    font-size: 22px;
+    font-weight: 250;
+    line-height: 30px;
+    letter-spacing: 0.75pt;
+}
+
+p a{
+    color: black;
+    text-decoration: underline red dotted 1px;
+    text-underline-offset: 20%;
+}
+
+#portfolio, #contactinfo {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sample, .sample2 {
     margin: 50px;
     padding: 0px;
-    background-color: peachpuff;
-    height: 400px;
+    background-color: red;
+    height: 500px;
 }
 
 .sample {
@@ -120,13 +125,36 @@ section div img {
     flex: 1 0 400px;
 }
 
-h5 {
-    padding: 50px;
-    font-size: 28px;
-    font-weight: 300;
+h4 {
+    display: inline;
+    background-color: white;
+    font-weight: 500;
+    font-size: large;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 400px;
+    padding: 25px;
 }
 
-@media screen and (max-width: 992px) {
+.address {
+    width: 50%;
+    flex: 1 0 400px;
+    padding-bottom: 0px;
+}
+
+.address h5 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+footer {
+    width: 100;
+    padding: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -149,11 +177,11 @@ h5 {
         text-underline-offset: 25%;
     }
 
-    h3 {
+    h3, p {
         text-align: center;
     }
     
-    section {
+    #about, #work {
         flex-direction: column;
     }
 
@@ -169,4 +197,10 @@ h5 {
         margin: 20px;
         width: 100%;
     }
+
+    #contactinfo{
+        margin: 20px;
+        width: 100%;
+    }
+
 }
