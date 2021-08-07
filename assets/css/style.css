@@ -4,13 +4,11 @@
     margin: 0;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
-}
-
-body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 header {
     display: flex;
@@ -18,14 +16,9 @@ header {
     align-content: center;
     padding: 50px;
     background-color: white;
+    position: relative;
     width: 100%;
     z-index: 999;
-}
-
-header h1 {
-    display: inline;
-    font-weight: 100;
-    letter-spacing: 2pt;
 }
 
 header img {
@@ -72,6 +65,9 @@ h2 {
     font-size: 100pt;
     letter-spacing: 2pt;
     text-align: right;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 25%;
 }
 
 section div img {
@@ -109,6 +105,11 @@ p a {
     flex-wrap: wrap;
 }
 
+#portfolio a {
+    display: flex;
+    width: 100%;
+}
+
 .sample {
     margin: 50px;
     padding: 0px;
@@ -118,6 +119,16 @@ p a {
     height: 500px;
     opacity: 1;
     transition: 1s ease-in-out;
+}
+
+.overlay {
+    display: block;
+    width: fit-content;
+    position: relative;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 400px;
+    padding: 25px;
 }
 
 #sample1 {
@@ -155,15 +166,16 @@ p a {
 }
 
 h4 {
-    display: inline;
-    background-color: white;
     font-weight: 500;
     font-size: large;
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 400px;
-    padding: 25px;
     letter-spacing: 2pt;
+}
+
+.overlay p {
+    padding: 0px;
+    font-size: 11pt;
+    letter-spacing: 1pt;
+    font-weight: 200;
 }
 
 .address {
