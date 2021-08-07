@@ -38,7 +38,7 @@
         width: 100%;
     }
 
-    #contactinfo{
+    #contactinfo {
         padding-left: 10px;
     }
     .address {
@@ -66,7 +66,28 @@
 }
 
 @media screen and (max-width: 768px) {
+    #portfolio {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .sample {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
     #contact {
         flex-direction: column;
+    }
+
+    #contactinfo {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .address h5 {
+        text-align: center;
+        font-size: 26px;
+        padding-left: 50px;
     }
 }

@@ -49,11 +49,12 @@ a {
     text-decoration: none;
 }
 
-#hero{
+#hero {
     display: block;
     height: 1000px;
-    background-image: url("../images/sotolvista.JPG");
+    background-image: url("../images/orchidportrait.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 section {
@@ -112,6 +113,8 @@ p a {
     margin: 50px;
     padding: 0px;
     background-color: red;
+    background-size: cover;
+    background-position: center;
     height: 500px;
     opacity: 1;
     transition: 1s ease-in-out;
@@ -120,13 +123,27 @@ p a {
 #sample1 {
     width: 100%;
     background-image: url("../images/vivaflyer-illeana.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 #sample2, #sample3, #sample4, #sample5 {
     width: 50%;
     flex: 1 0 400px;
+}
+
+#sample2 {
+    background-image: url("../images/tracfone.jpg");  
+}
+
+#sample3 {
+    background-image: url("../images/delmontefresh.jpg");
+}
+
+#sample4 {
+    background-image: url("../images/uofw.jpg");
+}
+
+#sample5 {
+    background-image: url("../images/luminaria.jpg");
 }
 
 .sample:hover {
@@ -165,4 +182,9 @@ footer {
     width: 100;
     padding: 100px;
     text-align: center;
+}
+
+h6 {
+    letter-spacing: 1pt;
+    font-weight: 200;
 }
