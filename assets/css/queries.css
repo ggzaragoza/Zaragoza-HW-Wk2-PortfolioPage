@@ -1,0 +1,72 @@
+@media screen and (max-width: 1366px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 30px;
+        margin-top: 70px;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    
+    h2 {
+        font-weight: 100;
+        font-size: 60pt;
+        letter-spacing: 2pt;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-underline-offset: 25%;
+    }
+    
+    #work {
+        flex-direction: column;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    section div img{
+        padding: 20px;
+    }
+
+    .sample, .sample2 {
+        margin: 20px;
+        width: 100%;
+    }
+
+    #contactinfo{
+        padding-left: 10px;
+    }
+    .address {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 35px;
+        letter-spacing: 2pt;
+    }
+    nav ul li {
+        font-size: 14px;
+        font-weight: 350;
+    }
+    
+    #about {
+        flex-direction: column;
+    }
+
+    h3, p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+    }
+}
