@@ -48,7 +48,7 @@ a {
     width: 100%;
     background-image: url("../images/portrait.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 section {
