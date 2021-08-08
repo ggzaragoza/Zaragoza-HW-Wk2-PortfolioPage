@@ -42,10 +42,11 @@ a {
     text-decoration: none;
 }
 
-#hero {
+#landingimage {
     display: block;
-    height: 1000px;
-    background-image: url("../images/orchidportrait.jpg");
+    height: 1100px;
+    width: 100%;
+    background-image: url("../images/portrait.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -121,13 +122,17 @@ p a {
     transition: 1s ease-in-out;
 }
 
-.overlay {
-    display: block;
+.preview {
+    padding: 0;
+    display: inline;
     width: fit-content;
     position: relative;
+}
+
+.overlay {
+    margin: 0;
     background-color: white;
-    margin-left: 0px;
-    margin-top: 400px;
+    width: fit-content;
     padding: 25px;
 }
 
@@ -167,7 +172,7 @@ p a {
 
 h4 {
     font-weight: 500;
-    font-size: large;
+    font-size: medium;
     letter-spacing: 2pt;
 }
 
@@ -184,10 +189,19 @@ h4 {
     padding-bottom: 0px;
 }
 
-.address h5 {
-    font-size: 20px;
-    font-weight: 400;
+.address img {
+    padding: 0;
+    width: auto;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.address p {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 350;
     text-align: left;
+    letter-spacing: .75pt;
 }
 
 footer {
@@ -196,7 +210,7 @@ footer {
     text-align: center;
 }
 
-h6 {
+h5 {
     letter-spacing: 1pt;
-    font-weight: 200;
+    font-weight: 100;
 }

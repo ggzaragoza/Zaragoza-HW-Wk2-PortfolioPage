@@ -57,7 +57,7 @@
         flex-direction: column;
     }
 
-    h3, p {
+    #about {
         text-align: center;
     }
 }
@@ -82,7 +82,7 @@
         padding-right: 40px;
     }
 
-    .address h5 {
+    .address p {
         text-align: center;
         font-size: 26px;
         padding-left: 50px;
