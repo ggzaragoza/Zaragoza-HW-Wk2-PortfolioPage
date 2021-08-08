@@ -62,11 +62,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 828px) {
     nav ul li {
-        font-size: 9px;
-        font-weight: 400;
-        letter-spacing: normal;
+        display: block;
+        text-align: center;
     }
 
     #portfolio {
@@ -90,7 +89,7 @@
 
     .address p {
         text-align: center;
-        font-size: 13px;
-        padding-left: 0px;
+        font-size: 18px;
+        padding-left: 40px;
     }
 }
