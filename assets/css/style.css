@@ -9,7 +9,7 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/* Main header space and layout behavior at top of landing page */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,15 +21,18 @@ header {
     z-index: 999;
 }
 
+/* Height of GZ rotating icon */
 header img {
     height: 75px;
     width: 75px;
 }
 
+/* Displays navigation links as plain text */
 nav ul {
     list-style-type: none;
 }
 
+/* Sets horizontal positioning of navigation bar, along with spacing between each link in navigation bar */
 nav ul li {
     display: inline-block;
     font-size: 14px;
@@ -37,11 +40,13 @@ nav ul li {
     margin-right: 30px;
 }
 
+/* Styles links within navigation bar */
 a {
     color: black;
     text-decoration: none;
 }
 
+/* Specifications for main image across landing page under header area */
 #landingimage {
     display: block;
     height: 1100px;
@@ -51,16 +56,20 @@ a {
     background-position: top;
 }
 
+
+/* Sets About, Work, and Contact sections as flexbox area */
 section {
     display: flex;
 }
 
+/* Specifies main layout/width across page of About, Work, and Contact sections containing respective header and each section's content, pre-resize  */
 section div {
     width: 50%;
     flex-grow: 1;
     padding: 50px;
 }
 
+/* About, Work, and Contact heading styles */
 h2 {
     font-weight: 100;
     font-size: 100pt;
@@ -71,12 +80,14 @@ h2 {
     text-underline-offset: 25%;
 }
 
+/* Padding specification of headshot, or any other regular image */
 section div img {
     padding: 50px;
     padding-bottom: 0px;
     width: 100%;
 }
 
+/* Styling of subheading under headshot */
 h3 {
     padding: 50px;
     padding-bottom: 0px;
@@ -87,6 +98,7 @@ h3 {
     letter-spacing: 1pt;
 }
 
+/* Styling of normal body copy on page */
 p {
     padding: 50px;
     font-size: 22px;
@@ -95,22 +107,26 @@ p {
     letter-spacing: 0.75pt;
 }
 
+/* Identifies links within body copy on page */
 p a {
     color: black;
     text-decoration: underline red dotted 1px;
     text-underline-offset: 20%;
 }
 
+/* Sets preview boxes within Work section, as well as Contact section with contact info and icons, as flexbox areas */
 #portfolio, #contactinfo {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Provides link capability within Work preview boxes */
 #portfolio a {
     display: flex;
     width: 100%;
 }
 
+/* This div contains each respective preview box's main image; mouse-over hover effects are also attached to these elements*/
 .sample {
     margin: 50px;
     padding: 0px;
@@ -122,6 +138,7 @@ p a {
     transition: 1s ease-in-out;
 }
 
+/* Main container for text overlay for each preview box */
 .preview {
     padding: 0;
     display: inline;
@@ -129,6 +146,7 @@ p a {
     position: relative;
 }
 
+/* Sets padding and background for each text overlay; holds both h4 and p elements for preview boxes */
 .overlay {
     margin: 0;
     background-color: white;
@@ -136,16 +154,19 @@ p a {
     padding: 25px;
 }
 
+/* Image assignment for top preview box; sets width for top preview box within #portfolio flex container */
 #sample1 {
     width: 100%;
     background-image: url("../images/vivaflyer-illeana.jpg");
 }
 
+/* Specifications of subsequent flex children within #portfolio flex container */
 #sample2, #sample3, #sample4, #sample5 {
     width: 50%;
     flex: 1 0 400px;
 }
 
+/* Image assignments of subsequent flex children within #portfolio flex container */
 #sample2 {
     background-image: url("../images/tracfone.jpg");  
 }
@@ -162,20 +183,19 @@ p a {
     background-image: url("../images/luminaria.jpg");
 }
 
+/* Extent of hover effect set here */
 .sample:hover {
     opacity: 0.6;
 }
 
-.sample:hover h4 {
-    opacity: 1;
-}
-
+/* Styling of client/organization name for each Work preview box */
 h4 {
     font-weight: 500;
     font-size: medium;
     letter-spacing: 2pt;
 }
 
+/* Styling of subheading under each client/organization name */
 .overlay p {
     padding: 0px;
     font-size: 11pt;
@@ -183,12 +203,14 @@ h4 {
     font-weight: 200;
 }
 
+/* Sets flex properties and behavior for items within #contactinfo flex container */
 .address {
     width: 50%;
     flex: 1 0 400px;
     padding-bottom: 0px;
 }
 
+/* Sizing of icons next to contact info */
 .address img {
     padding: 0;
     width: auto;
@@ -196,6 +218,7 @@ h4 {
     margin-right: 20px;
 }
 
+/* Styling of contact info in Contact section */
 .address p {
     padding: 0;
     font-size: 18px;
@@ -204,12 +227,14 @@ h4 {
     letter-spacing: .75pt;
 }
 
+/* Positioning of footer area at bottom of landing page */
 footer {
     width: 100;
     padding: 100px;
     text-align: center;
 }
 
+/* Font specifications within footer */
 h5 {
     letter-spacing: 1pt;
     font-weight: 100;
