@@ -16,3 +16,4 @@ All photographs and icons were shot and/or edited by me, and any references to o
 
 <img width="500" alt="Screen Shot 2021-08-07 at 11 10 30 PM" src="https://user-images.githubusercontent.com/86588318/128620557-d5da95f3-fdd8-4741-9a02-02389e9668d0.png">
 
+Deployed application: <a href="https://ggzaragoza.github.io/Zaragoza-HW-Wk2-PortfolioPage/">https://ggzaragoza.github.io/Zaragoza-HW-Wk2-PortfolioPage/</a>
