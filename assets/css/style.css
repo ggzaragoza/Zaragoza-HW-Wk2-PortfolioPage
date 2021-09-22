@@ -10,7 +10,6 @@ html, body {
     font-family: 'Barlow', sans-serif;
 }
 
-/* Main header space and layout behavior at top of landing page */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,26 +26,11 @@ header ul {
     font-weight: bold;
 }
 
-/* Height of GZ rotating icon */
 header img {
     height: 75px;
     width: 75px;
 }
 
-/* Displays navigation links as plain */
-/* nav ul {
-    list-style-type: none;
-} */
-
-/* Sets horizontal positioning of navigation bar, along with spacing between each link in navigation bar */
-/* nav ul li {
-    display: inline-block;
-    font-size: 14px;
-    letter-spacing: 1pt;
-    margin-left: 30px;
-} */
-
-/* Styles links within navigation bar */
 a {
     color: black;
     text-decoration: none;
@@ -56,29 +40,20 @@ main {
     height: 100%;
 }
 
-/* Sets About, Work, and Contact sections as flexbox area */
 #about {
     display: flex;
-    /* align-items: center; */
     height: 100%;
-    /* background-color: thistle; */
 }
 
-/* Specifies main layout/width across page of About, Work, and Contact sections containing respective header and each section's content, pre-resize  */
 #about div {
-    /* height: 100%; */
     width: 50%;
     flex-grow: 1;
     padding: 250px;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 #bio {
     display: flex;
     height: 100%;
-    /* padding: 200px; */
-    /* background-color: orange; */
     align-items: center;
 }
 
@@ -96,8 +71,6 @@ h1 {
     background-position: center;
 }
 
-/* Sets preview boxes within Work section, as well as Contact section with contact info and icons, as flexbox areas */
-/* #work, #contactinfo { */
 #work {
     padding: 50px;
     display: flex;
@@ -106,44 +79,33 @@ h1 {
     height: 100%;
 }
 
-/* #work div { */
-    /* padding: 50px; */
-    /* background-color: pink; */
-    /* flex: 1 0 400px; */
-    /* height: 100%; */
-/* } */
-
-/* Provides link capability within Work preview boxes */
-/* #work div a {
-    display: flex;
-    width: 100%;
-} */
-
-/* This div contains each respective preview box's main image; mouse-over hover effects are also attached to these elements*/
 .sample {
-    /* margin: 50px;
-    padding: 0px; */
-    /* background-color: red; */
+    flex: 1 0 400px;
     background-size: cover;
     background-position: center;
     height: 100%;
 }
 
-/* Main container for text overlay for each preview box */
-/* .preview {
-    padding: 0;
-    display: inline;
-    width: fit-content;
-    position: relative;
-} */
+.sample button {
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Barlow', sans-serif;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
 
-/* Sets padding and background for each text overlay; holds both h4 and p elements for preview boxes */
 .overlay {
     display: flex;
     margin: 0;
     width: 100%;
     height: 100%;
-    /* padding: 25px; */
     background-color: red;
     color: white;
     text-align: center;
@@ -154,23 +116,10 @@ h1 {
     transition: 1s ease-in-out;
 }
 
-/* .project {
-    display: table-cell;
-} */
-
-/* Image assignment for top preview box; sets width for top preview box within #portfolio flex container */
 #sample1 {
-    /* width: 100%; */
     background-image: url("../images/vivaflyer-illeana.jpg");
 }
 
-/* Specifications of subsequent flex children within #portfolio flex container */
-#sample1, #sample2, #sample3, #sample4, #sample5 {
-    /* width: 50%; */
-    flex: 1 0 400px;
-}
-
-/* Image assignments of subsequent flex children within #portfolio flex container */
 #sample2 {
     background-image: url("../images/tracfone.jpg");  
 }
@@ -179,26 +128,15 @@ h1 {
     background-image: url("../images/delmontefresh.jpg");
 }
 
-/* #sample4 {
-    background-image: url("../images/uofw.jpg");
-}
-
-#sample5 {
-    background-image: url("../images/luminaria.jpg");
-} */
-
-/* Extent of hover effect set here */
 .overlay:hover {
     opacity: 0.9;
 }
 
-/* Styling of client/organization name for each Work preview box */
 .project h2 {
     font-size: 32px;
     font-weight: bold;
 }
 
-/* Styling of subheading under each client/organization name */
 .project p {
     margin: 15px;
     padding: 0px;
@@ -210,7 +148,7 @@ h1 {
     justify-content: space-between;
     padding: 50px;
 }
-/* Sets flex properties and behavior for items within #contactinfo flex container */
+
 #contact img {
     padding: 0;
     width: auto;
@@ -228,23 +166,15 @@ h1 {
     padding: 0;
     margin-right: 75px;
     font-size: 28px;
-    /* font-weight: bold; */
     text-align: center;
-    /* letter-spacing: .75pt; */
 }
 
-/* Sizing of icons next to contact info */
-
-/* Styling of contact info in Contact section */
-
-/* Positioning of footer area at bottom of landing page */
 footer {
     width: 100;
     padding: 100px;
     text-align: center;
 }
 
-/* Font specifications within footer */
 h5 {
     letter-spacing: 1pt;
     font-weight: 100;
