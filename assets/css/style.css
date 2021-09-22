@@ -5,20 +5,26 @@
 }
 
 html, body {
+    height: 100%;
     scroll-behavior: smooth;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 /* Main header space and layout behavior at top of landing page */
 header {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding: 50px;
-    background-color: white;
-    position: relative;
+    background-color: transparent;
+    position: fixed;
     width: 100%;
     z-index: 999;
+}
+
+header ul {
+    list-style-type: none;
+    font-weight: bold;
 }
 
 /* Height of GZ rotating icon */
@@ -28,17 +34,17 @@ header img {
 }
 
 /* Displays navigation links as plain */
-nav ul {
+/* nav ul {
     list-style-type: none;
-}
+} */
 
 /* Sets horizontal positioning of navigation bar, along with spacing between each link in navigation bar */
-nav ul li {
+/* nav ul li {
     display: inline-block;
     font-size: 14px;
-    letter-spacing: 2pt;
-    margin-right: 30px;
-}
+    letter-spacing: 1pt;
+    margin-left: 30px;
+} */
 
 /* Styles links within navigation bar */
 a {
@@ -46,123 +52,121 @@ a {
     text-decoration: none;
 }
 
-/* Specifications for main image across landing page under header area */
-#landingimage {
-    display: block;
-    height: 1100px;
-    width: 100%;
-    background-image: url("../images/portrait.jpg");
-    background-size: cover;
-    background-position: top;
+main {
+    height: 100%;
 }
 
-
 /* Sets About, Work, and Contact sections as flexbox area */
-section {
+#about {
     display: flex;
+    /* align-items: center; */
+    height: 100%;
+    /* background-color: thistle; */
 }
 
 /* Specifies main layout/width across page of About, Work, and Contact sections containing respective header and each section's content, pre-resize  */
-section div {
+#about div {
+    /* height: 100%; */
     width: 50%;
     flex-grow: 1;
-    padding: 50px;
+    padding: 250px;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
-/* About, Work, and Contact heading styles */
-h2 {
-    font-weight: 100;
-    font-size: 100pt;
-    letter-spacing: 2pt;
-    text-align: right;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-underline-offset: 25%;
+#bio {
+    display: flex;
+    height: 100%;
+    /* padding: 200px; */
+    /* background-color: orange; */
+    align-items: center;
 }
 
-/* Padding specification of headshot, or any other regular image */
-section div img {
-    padding: 50px;
-    padding-bottom: 0px;
-    width: 100%;
-}
-
-/* Styling of subheading under headshot */
-h3 {
-    padding: 50px;
-    padding-bottom: 0px;
+h1 {
     color: red;
-    font-size: 36px;
-    line-height: 42px;
     font-weight: 100;
-    letter-spacing: 1pt;
+    font-size: 60pt;
+    letter-spacing: -1pt;
+    text-align: center;
 }
 
-/* Styling of normal body copy on page */
-p {
-    padding: 50px;
-    font-size: 22px;
-    font-weight: 250;
-    line-height: 30px;
-    letter-spacing: 0.75pt;
-}
-
-/* Identifies links within body copy on page */
-p a {
-    color: black;
-    text-decoration: underline red dotted 1px;
-    text-underline-offset: 20%;
+#headshot {
+    background-image: url("../images/greg4.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Sets preview boxes within Work section, as well as Contact section with contact info and icons, as flexbox areas */
-#portfolio, #contactinfo {
+/* #work, #contactinfo { */
+#work {
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
 }
 
+/* #work div { */
+    /* padding: 50px; */
+    /* background-color: pink; */
+    /* flex: 1 0 400px; */
+    /* height: 100%; */
+/* } */
+
 /* Provides link capability within Work preview boxes */
-#portfolio a {
+/* #work div a {
     display: flex;
     width: 100%;
-}
+} */
 
 /* This div contains each respective preview box's main image; mouse-over hover effects are also attached to these elements*/
 .sample {
-    margin: 50px;
-    padding: 0px;
-    background-color: red;
+    /* margin: 50px;
+    padding: 0px; */
+    /* background-color: red; */
     background-size: cover;
     background-position: center;
-    height: 500px;
-    opacity: 1;
-    transition: 1s ease-in-out;
+    height: 100%;
 }
 
 /* Main container for text overlay for each preview box */
-.preview {
+/* .preview {
     padding: 0;
     display: inline;
     width: fit-content;
     position: relative;
-}
+} */
 
 /* Sets padding and background for each text overlay; holds both h4 and p elements for preview boxes */
 .overlay {
+    display: flex;
     margin: 0;
-    background-color: white;
-    width: fit-content;
-    padding: 25px;
+    width: 100%;
+    height: 100%;
+    /* padding: 25px; */
+    background-color: red;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: 1s ease-in-out;
 }
+
+/* .project {
+    display: table-cell;
+} */
 
 /* Image assignment for top preview box; sets width for top preview box within #portfolio flex container */
 #sample1 {
-    width: 100%;
+    /* width: 100%; */
     background-image: url("../images/vivaflyer-illeana.jpg");
 }
 
 /* Specifications of subsequent flex children within #portfolio flex container */
-#sample2, #sample3, #sample4, #sample5 {
-    width: 50%;
+#sample1, #sample2, #sample3, #sample4, #sample5 {
+    /* width: 50%; */
     flex: 1 0 400px;
 }
 
@@ -175,57 +179,63 @@ p a {
     background-image: url("../images/delmontefresh.jpg");
 }
 
-#sample4 {
+/* #sample4 {
     background-image: url("../images/uofw.jpg");
 }
 
 #sample5 {
     background-image: url("../images/luminaria.jpg");
-}
+} */
 
 /* Extent of hover effect set here */
-.sample:hover {
-    opacity: 0.6;
+.overlay:hover {
+    opacity: 0.9;
 }
 
 /* Styling of client/organization name for each Work preview box */
-h4 {
-    font-weight: 500;
-    font-size: medium;
-    letter-spacing: 2pt;
+.project h2 {
+    font-size: 32px;
+    font-weight: bold;
 }
 
 /* Styling of subheading under each client/organization name */
-.overlay p {
+.project p {
+    margin: 15px;
     padding: 0px;
-    font-size: 11pt;
-    letter-spacing: 1pt;
-    font-weight: 200;
+    font-size: 12pt;
 }
 
+#contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
 /* Sets flex properties and behavior for items within #contactinfo flex container */
-.address {
-    width: 50%;
-    flex: 1 0 400px;
-    padding-bottom: 0px;
+#contact img {
+    padding: 0;
+    width: auto;
+    height: 30px;
+    margin-right: 15px;
+}
+
+#socials img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+#contact p {
+    display: inline;
+    padding: 0;
+    margin-right: 75px;
+    font-size: 28px;
+    /* font-weight: bold; */
+    text-align: center;
+    /* letter-spacing: .75pt; */
 }
 
 /* Sizing of icons next to contact info */
-.address img {
-    padding: 0;
-    width: auto;
-    height: 25px;
-    margin-right: 20px;
-}
 
 /* Styling of contact info in Contact section */
-.address p {
-    padding: 0;
-    font-size: 18px;
-    font-weight: 350;
-    text-align: left;
-    letter-spacing: .75pt;
-}
 
 /* Positioning of footer area at bottom of landing page */
 footer {
