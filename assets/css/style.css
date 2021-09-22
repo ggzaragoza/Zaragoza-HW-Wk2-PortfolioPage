@@ -152,7 +152,7 @@ h1 {
 #contact img {
     padding: 0;
     width: auto;
-    height: 30px;
+    height: 24px;
     margin-right: 15px;
 }
 
@@ -167,6 +167,10 @@ h1 {
     margin-right: 75px;
     font-size: 28px;
     text-align: center;
+}
+
+#address div {
+    display: inline;
 }
 
 footer {

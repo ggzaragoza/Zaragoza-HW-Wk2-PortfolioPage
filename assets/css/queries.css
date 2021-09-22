@@ -48,6 +48,10 @@
 }
 
 @media screen and (max-width: 1366px) {
+    header {
+        position: relative;
+    }
+
     #about {
         flex-direction: column;
     }
@@ -58,7 +62,8 @@
     }
 
     #headshot {
-        background-position: contain;
+        background-size: cover;
+        background-position: top;
         height: 100%;
     }
 
@@ -66,49 +71,58 @@
         height: auto;
     }
 
-    /* #headshot {
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    #contact img {
+        height: 30px;
+    }
+
+    #contact p {
+        margin: 0;
+        margin-left: 10px;
+        /* display: block; */
+        /* margin: 0 auto; */
+        font-size: 24px;
+    }
+
+    #address div {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #address img {
         display: none;
         visibility: hidden;
-    } */
-
-    /* #bio h1 {
-        font-size: 42px;
+        z-index: -1;
     }
 
-    #work {
-        padding: 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
+    #socials img {
+        margin: 15px;
     }
-
-    .sample {
-        width: 100%;
-        height: auto;
-        flex: 1 0 1024px;
-    } */
 }
 
 @media screen and (max-width: 1024px) {
-    header {
-        padding: 35px;
-        letter-spacing: 2pt;
-    }
-    nav ul li {
-        font-size: 14px;
-        font-weight: 350;
+    #bio h1 {
+        font-size: 36px;
     }
     
-    #about {
-        flex-direction: column;
-    }
-
-    #about {
-        text-align: center;
+    .sample {
+        flex: 1 0 828px;
     }
 }
 
 @media screen and (max-width: 828px) {
-    nav ul li {
+    header, #about, .sample, #contact {
+        flex: 1 0 400px;
+    }
+    /* nav ul li {
         display: block;
         text-align: center;
     }
@@ -136,5 +150,5 @@
         text-align: center;
         font-size: 18px;
         padding-left: 40px;
-    }
+    } */
 }
