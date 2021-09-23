@@ -6,29 +6,12 @@
     #bio h1 {
         font-size: 48pt;
     }
-
-    /* .sample {
-        flex: 1 0 1536px;
-    } */
 }
 
 @media screen and (max-width: 1536px) {
-    /* header {
-        position: relative;
-    }
-
-    #about {
-        flex-direction: column;
-    } */
-
     #about div {
         padding: 100px;
     }
-
-    /* #headshot {
-        display: none;
-        visibility: hidden;
-    } */
 
     #bio h1 {
         font-size: 42px;
@@ -84,8 +67,6 @@
     #contact p {
         margin: 0;
         margin-left: 10px;
-        /* display: block; */
-        /* margin: 0 auto; */
         font-size: 24px;
     }
 
@@ -122,33 +103,4 @@
     header, #about, .sample, #contact {
         flex: 1 0 400px;
     }
-    /* nav ul li {
-        display: block;
-        text-align: center;
-    }
-
-    #portfolio {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .sample {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    #contact {
-        flex-direction: column;
-    }
-
-    #contactinfo {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .address p {
-        text-align: center;
-        font-size: 18px;
-        padding-left: 40px;
-    } */
 }
