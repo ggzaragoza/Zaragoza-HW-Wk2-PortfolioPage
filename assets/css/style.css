@@ -87,6 +87,7 @@ h1 {
 }
 
 .sample button {
+    display: inline;
     margin-top: 10px;
     border: 1px solid white;
     border-radius: 50px;
